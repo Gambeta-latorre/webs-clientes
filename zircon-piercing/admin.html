@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Panel · Zircon</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  body { background: var(--ivory); }
+  .adm-head { background: var(--night); color: var(--on-night); }
+  .adm-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 70px; }
+  .adm-head a { color: var(--gold-l); font-size: 13px; }
+  .adm { padding: 40px 0 80px; }
+  .adm h1 { font: 500 44px/1 var(--serif); margin-bottom: 26px; }
+  .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 30px; }
+  .kpi { background: var(--paper); border: 1px solid var(--line); border-radius: var(--r); padding: 18px 20px; }
+  .kpi b { display: block; font: 600 30px/1.1 var(--sans); }
+  .kpi span { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+  .t { display: grid; gap: 10px; }
+  .tr { background: var(--paper); border: 1px solid var(--line); border-radius: var(--r); padding: 16px 18px; display: grid; grid-template-columns: 1.2fr 1.4fr auto; gap: 16px; align-items: start; }
+  .tr h3 { font: 500 22px/1.15 var(--serif); }
+  .tr small { color: var(--muted); font-size: 12px; display: block; }
+  .tr p { font-size: 13.5px; color: var(--ink-2); }
+  .tr a { color: var(--copper-d); }
+  .tr select { border: 1px solid var(--line-2); border-radius: 999px; padding: 8px 14px; background: var(--white); }
+  .msg { padding: 60px 20px; text-align: center; color: var(--ink-2); }
+  .msg b { display: block; font: 500 30px/1.2 var(--serif); color: var(--ink); margin-bottom: 8px; }
+  .pop-list { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 30px; }
+  .pop-list span { background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; font-size: 12.5px; }
+  @media (max-width: 760px) { .kpis { grid-template-columns: 1fr 1fr; } .tr { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header class="adm-head"><div class="wrap"><span class="brand-txt"><b>ZIRCON</b><small style="color:var(--on-night-2)">panel del local</small></span><a href="./">← Volver a la web</a></div></header>
+<main class="wrap adm" id="app"><p class="msg">Cargando…</p></main>
+<script src="assets/admin.js" defer></script>
+</body>
+</html>
