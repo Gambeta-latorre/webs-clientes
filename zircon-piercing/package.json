@@ -1,0 +1,11 @@
+{
+  "name": "zircon-piercing",
+  "private": true,
+  "type": "module",
+  "description": "Web de Zircon Joyería Corporal: catálogo, cuentas opcionales y pedido de turnos.",
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.4",
+    "bcryptjs": "^2.4.3"
+  }
+}
